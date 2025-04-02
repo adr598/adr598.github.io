@@ -30,26 +30,26 @@ function initNavbarScrollEffect() {
     }
 }
 
-// Basic form validation (additional to Bootstrap's native validation)
-function initFormValidation() {
-    const contactForm = document.getElementById('contactForm');
+// // Basic form validation (additional to Bootstrap's native validation)
+// function initFormValidation() {
+//     const contactForm = document.getElementById('contactForm');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            if (!contactForm.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-            } else {
-                // If the form is valid, we'd typically submit to a server
-                // For demo purposes, let's just show a success message
-                event.preventDefault();
-                showFormSuccess(contactForm);
-            }
+//     if (contactForm) {
+//         contactForm.addEventListener('submit', function(event) {
+//             if (!contactForm.checkValidity()) {
+//                 // event.preventDefault();
+//                 event.stopPropagation();
+//             } else {
+//                 // If the form is valid, we'd typically submit to a server
+//                 // For demo purposes, let's just show a success message
+//                 // event.preventDefault();
+//                 showFormSuccess(contactForm);
+//             }
             
-            contactForm.classList.add('was-validated');
-        });
-    }
-}
+//             contactForm.classList.add('was-validated');
+//         });
+//     }
+// }
 
 // Show form success message
 function showFormSuccess(form) {
